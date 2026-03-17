@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+.vercel
+*.js.map
+*.d.ts
+
+!nest-cli.json
+!tsconfig.json
+!tsconfig.build.json
+!vercel.json
+!package.json

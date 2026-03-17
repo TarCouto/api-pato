@@ -12,10 +12,10 @@ export function setupSwagger(app: INestApplication): void {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document, {
     customCssUrl:
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui.min.css',
+      'https://unpkg.com/swagger-ui-dist@5/swagger-ui.css',
     customJs: [
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui-bundle.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui-standalone-preset.js',
+      'https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js',
+      'https://unpkg.com/swagger-ui-dist@5/swagger-ui-standalone-preset.js',
     ],
   });
 }
